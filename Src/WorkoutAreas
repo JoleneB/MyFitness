@@ -1,0 +1,17 @@
+package MyFitness;
+
+public enum WorkoutAreas{
+
+    ARMS, CHEST, BACK, ABDOMINAL, LEGS;
+
+    public string toString() {
+        switch(this) {
+            case ARMS:      return "Arms";
+            case CHEST:     return "Chest";
+            case BACK:      return "Back";
+            case ABDOMINAL: return "Abdominal";
+            case LEGS:      return "Legs";
+            default:        return "Unspecified";
+        }
+    }
+}
