@@ -1,0 +1,16 @@
+package MyFitness;
+
+public enum ArmWorkouts {
+    CURL, INCLINECURL, TRICEPEXTENSIONS, DIPS;
+
+    public String toString() {
+        switch(this) {
+            case CURL:              return "Curl";
+            case INCLINECURL:       return "Incline curl";
+            case TRICEPEXTENSIONS:  return "Tricep Extensions";
+            case DIPS:              return "Dips";
+            default:                return "unspecified";
+        }
+    }
+
+}
