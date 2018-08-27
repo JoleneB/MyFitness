@@ -1,0 +1,16 @@
+package MyFitness;
+
+public enum ChestWorkouts {
+    BENCHPRESS, CABLEFLY, PULLOVER, DIPS;
+
+    public String toString() {
+        switch(this) {
+            case BENCHPRESS:        return "Bench Press";
+            case CABLEFLY:          return "Cable Fly";
+            case PULLOVER:          return "Pull Over";
+            case DIPS:              return "Dips";
+            default:                return "unspecified";
+        }
+    }
+
+}
