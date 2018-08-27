@@ -1,0 +1,16 @@
+package MyFitness;
+
+public enum AbdominalWorkouts {
+    SITUPS, RUSSIANTWIST, LEGRAISES, PLANKS;
+
+    public String toString() {
+        switch(this) {
+            case SITUPS:             return "Curl";
+            case RUSSIANTWIST:       return "Incline curl";
+            case LEGRAISES:          return "Tricep Extensions";
+            case PLANKS:             return "Dips";
+            default:                 return "Unspecified";
+        }
+    }
+
+}
