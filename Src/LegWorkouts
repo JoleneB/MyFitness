@@ -1,0 +1,16 @@
+package MyFitness;
+
+public enum LegWorkouts {
+    SQUAT, LUNGE, LEGPRESS, CALFRAISES;
+
+    public String toString() {
+        switch(this) {
+            case SQUAT:             return "Squat";
+            case LUNGE:             return "Lunge";
+            case LEGPRESS:          return "Leg Press";
+            case CALFRAISES:        return "Calf Raises";
+            default:                return "unspecified";
+        }
+    }
+
+}
