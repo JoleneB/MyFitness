@@ -1,0 +1,16 @@
+package MyFitness;
+
+public enum BackWorkouts {
+    DEADLIFT, PULLUP, ROWS, DIPS;
+
+    public String toString() {
+        switch(this) {
+            case DEADLIFT:          return "Deadlift";
+            case PULLUP:            return "Pull up";
+            case ROWS:              return "Rows";
+            case DIPS:              return "Dips";
+            default:                return "Unspecified";
+        }
+    }
+
+}
