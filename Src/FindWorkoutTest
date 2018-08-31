@@ -1,0 +1,103 @@
+package MyFitness;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Iterator;
+import java.util.List;
+import java.util.*;
+import java.util.Scanner;
+
+
+
+public class FindWorkoutTest {
+    public static void main(String[] args){
+
+        storedExercises storedExercise = new storedExercises();
+        initializestoredExercises(storedExercise);
+
+
+        Map exercises = new HashMap();
+            Scanner reader = new Scanner(System.in);
+            System.out.println("What muscle area do you want to target?");
+            chosenMuscleArea = in.nextLine();
+
+            reader.close();
+            ExerciseDetails ChosenMuscleArea = new ExerciseDetails(exercises);
+
+
+        List matchedExercise = storedExercise.search(ChosenMuscleArea);
+        if (!matchedExercise.isEmpty()) {
+            System.out.println("Here are the exercises for your target area: ");
+                ExerciseDetails details = workout.getDetails();
+                System.out.println("We have a " + details.getExercises("exerciseType"));
+
+                System.out.println("  You can do this exercise " +
+                        details.getExercise("exerciseType") + " for" +
+                        workout.getSet() + " sets and" + workout.getReps + "reps" + "\n---");
+            }
+
+        else {
+            System.out.println("There is nothing in our database for that muscle area");
+        }
+    }
+
+
+
+
+        private static void intalizeStoredExercises(storedExercises storedExercise){
+            map exercises = new HashMap();
+            exercises.put("WorkoutAreas", WorkoutAreas.ARMS);
+            exercises.put("ArmWorkouts", ArmWorkouts.CURL);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+            exercises.put("ArmWorkouts", ArmWorkouts.INCLINECURL);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+            exercise.put("ArmWorkouts", ArmWorkouts.TRICEPEXTENSIONS);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+            exercise.put("ArmWorkouts", ArmWorkouts.DIPS);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+
+
+            exercises.put("WorkoutAreas", WorkoutAreas.LEGS);
+            exercises.put("LegWorkouts", LegWorkouts.SQUAT);
+            storedExercise.addWorkout(4, 3, new ExerciseDetails(exercises));
+            exercises.put("LegWorkouts", LegWorkouts.LUNGE);
+            storedExercise.addWorkout(4, 12, new ExerciseDetails(exercises));
+            exercises.put("LegWorkouts", LegWorkouts.LEGRAISES);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+            exercises.put("LegWorkouts", LegWorkouts.CALFRAISES);
+            storedExercise.addWorkout(3, 15, new ExerciseDetails(exercises));
+
+            exercises.put("WorkoutAreas", WorkoutAreas.BACK);
+            exercises.put("BackWorkouts", BackWorkouts.DEADLIFT);
+            storedExercise.addWorkout(4, 3, new ExerciseDetails(exercises));
+            exercises.put("BackWorkouts", BackWorkouts.PULLUP);
+            storedExercise.addWorkout(4, 6, new ExerciseDetails(exercises));
+            exercises.put("BackWorkouts", BackWorkouts.ROWS);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+            exercises.put("BackWorkouts", BackWorkouts.DIPS);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+
+            exercises.put("WorkoutAreas", WorkoutAreas.CHEST);
+            exercises.put("ChestWorkouts", ChestWorkouts.BENCHPRESS);
+            storedExercise.addWorkout(4, 3, new ExerciseDetails(exercises));
+            exercises.put("ChestWorkouts", ChestWorkouts.CABLEFLY);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+            exercises.put("ChestWorkouts", ChestWorkouts.PULLOVER);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+            exercises.put("ChestWorkouts", ChestWorkouts.DIPS);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+
+            exercises.put("WorkoutAreas", WorkoutAreas.ABDOMINAL);
+            exercises.put("ChestWorkouts", ChestWorkouts.SITUPS);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+            exercises.put("ChestWorkouts", ChestWorkouts.RUSSIANTWIST);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+            exercises.put("ChestWorkouts", ChestWorkouts.LEGRAISES);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+            exercises.put("ChestWorkouts", ChestWorkouts.PLANKS);
+            storedExercise.addWorkout(4, 10, new ExerciseDetails(exercises));
+
+
+
+        }
+    }
