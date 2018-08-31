@@ -9,8 +9,8 @@
 | 3  |  Log in |   |   |   |
 |  4 |  Sign out |   |  
 | 5  | Create a workout  | Fully dressed  |  
-|  6 | Amend workout  | C  |  
-|  7 |  Delete workout | C  |  
+|  6 | Amend workout  | Casual  |  
+|  7 |  Delete workout | Casual  |  
 |  8 | View workout   | Brief  |  
 | 9  | Research workout  | Brief  |  
 | 10  | Create a diet plan  |   |  
