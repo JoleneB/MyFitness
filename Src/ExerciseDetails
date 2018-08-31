@@ -1,0 +1,41 @@
+package MyFitness;
+
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Iterator;
+
+public class ExerciseDetails {
+    private map exercises;
+
+    public ExerciseDetails(Map exercises) {
+        if (exercises == null) {
+            this.exercises = new HashMap();
+        } else {
+            this.exercises = HashMap(exercises);
+        }
+    }
+
+    public Object getExercise(String exerciseType) {
+        return exercises.get(exerciseType);
+    }
+
+    public map getExercises() {
+        return exercises;
+    }
+
+    public boolean match(ExerciseDetails details)
+        for(
+             Iterator i = details.getExercise().keySet().iterator();
+                i.hasNext();)
+        }
+
+        String exerciseType = (String)iterator.next();
+    if(!exercises.get(ExerciseType).equals(
+            details.getExercise(exerciseType))) {
+        return false;
+            }
+            )
+            return true;
+
+}
