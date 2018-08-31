@@ -1,0 +1,44 @@
+package MyFitness;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.LinkedList;
+
+
+public class storedExercises {
+    private List storedExercise;
+
+    public storedExercises() {
+
+        storedExercise = new Linkedlist();
+    }
+
+    public void addExercise(String exerciseName, double setNum, double repNum, ExerciseDetails details) {
+       Workout workout = new workout(setNum, repNum, details);
+       storedExercise.add(workout);
+    }
+
+    public Workout get(String exerciseName) {
+        for (Iterator i = storedExercise.iterator();
+             i.hasNext(); ) {
+            Workout workout = (Workout) i.next();
+            if (workout.getexerciseName().equals(exerciseName)) {
+                return workout;
+            }
+        }
+        return null;
+    }
+
+    public List search(ExerciseDetails searchDetails) {
+        List preferedExercise = new LinkedList();
+        for (Iterator i = storedExercise.iterator();
+                i.hasNext();)
+        {
+            Workout workout = (Workout) i.next();
+            if (workout.getDetails().matches(searchDetails))
+                preferedExercise.add(workout);
+        }
+        return preferedExercise;
+    }
+
+}
