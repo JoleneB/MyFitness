@@ -1,0 +1,49 @@
+package MyFitness;
+
+public class Workout {
+
+    private String exerciseName;
+    private double set, reps;
+    private ExerciseDetails details;
+
+    public Workout(String exerciseName, double set, double reps, ExerciseDetails details){
+        this.exerciseName = exerciseName;
+        this.set = set;
+        this. reps = reps;
+        this.details = details;
+    }
+
+    public String getExerciseName() {
+        return exerciseName;
+    }
+
+    public double getSet() {
+        return set;
+    }
+
+    public double getReps(){
+
+        return reps;
+    }
+
+    public void setSet(double setNum){
+        if(setNum == 0){
+            System.out.println("The number of sets is required");
+        }
+        this.set = setNum;
+    }
+
+    public void setReps(double repNum) {
+        if(setNum == 0){
+            System.out.println("The number of sets is required");
+        }
+
+        this.reps = repNum;
+    }
+
+    public ExerciseDetails getDetails() {
+        return details;
+    }
+}
+
+
